@@ -5,8 +5,9 @@ import { useAuth } from "@/hooks/useAuth";
 import type { AuthUser, AuthState } from "@/types";
 
 interface AuthContextType extends AuthState {
-  signIn: (user: AuthUser) => void;
-  signOut: () => void;
+  login: (user: AuthUser) => void;
+  logout: () => void;
+  updateUser: (userData: Partial<AuthUser>) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);

@@ -18,7 +18,7 @@ import Image from "next/image";
 
 export function Navbar() {
   const t = useTranslations("common");
-  const { user, isAuthenticated, signOut } = useAuthContext();
+  const { user, isAuthenticated, logout } = useAuthContext();
   const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
   const locale = useLocale();
@@ -29,7 +29,7 @@ export function Navbar() {
   };
 
   const handleSignOut = () => {
-    signOut();
+    logout();
     redirect({ href: "/auth/login", locale });
   };
 
