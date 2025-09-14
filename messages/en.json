@@ -1,5 +1,6 @@
 {
   "common": {
+    "projectTitle": "Todo Task App",
     "createNewTask": "Create New Task",
     "upload": "Upload",
     "profile": "Profile",
@@ -40,7 +41,8 @@
     "medium": "Medium",
     "high": "High",
     "creating": "Creating...",
-    "createTask": "Create Task"
+    "createTask": "Create Task",
+    "loading": "Loading..."
   },
   "auth": {
     "signIn": {

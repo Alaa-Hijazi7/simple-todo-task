@@ -1,5 +1,6 @@
 {
   "common": {
+    "projectTitle": "تطبيق مهام Todo",
     "createNewTask": "إنشاء مهمة جديدة",
     "upload": "رفع",
     "profile": "الحساب",
@@ -37,7 +38,8 @@
     "priority": "الأولوية",
     "dueDate": "تاريخ الاستحقاق",
     "creating": "جاري الإنشاء...",
-    "createTask": "إنشاء مهمة"
+    "createTask": "إنشاء مهمة",
+    "loading": "جاري التحميل..."
   },
   "auth": {
     "signIn": {
