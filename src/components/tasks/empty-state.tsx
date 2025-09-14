@@ -31,10 +31,7 @@ export function EmptyState({ onCreateTask }: EmptyStateProps) {
 
         <p className="text-gray-600 mb-6">{t("description2")}</p>
 
-        <Button
-          onClick={onCreateTask}
-          className="bg-red-600 hover:bg-red-700 text-white"
-        >
+        <Button onClick={onCreateTask}>
           <Plus className="mr-2 h-4 w-4" />
           {t("createNewStatus")}
         </Button>

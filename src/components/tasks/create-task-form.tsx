@@ -31,25 +31,27 @@ interface CreateTaskFormProps {
   onTaskCreated?: (task: any) => void;
   onTaskUpdated?: (task: any) => void;
   editingTask?: Task | null;
-  mode?: 'create' | 'edit';
+  mode?: "create" | "edit";
 }
 
-export function CreateTaskForm({ 
-  onTaskCreated, 
-  onTaskUpdated, 
-  editingTask, 
-  mode = 'create' 
+export function CreateTaskForm({
+  onTaskCreated,
+  onTaskUpdated,
+  editingTask,
+  mode = "create",
 }: CreateTaskFormProps) {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const t = useTranslations("tasks.form");
   const tCommon = useTranslations("common.toDoStatus");
 
   const taskFormSchema = z.object({
-    title: z.string().min(1, "Title is required").max(100, "Title is too long"),
+    title: z
+      .string()
+      .min(1, t("validation.titleRequired"))
+      .max(100, t("validation.titleTooLong")),
     description: z.string().optional(),
     status: z.object({
-      name: z.string().min(1, "Status is required"),
-      color: z.string().min(1, "Color is required"),
+      name: z.string().min(1, t("validation.statusRequired")),
+      color: z.string().min(1, t("validation.colorRequired")),
     }),
   });
 
@@ -71,15 +73,14 @@ export function CreateTaskForm({
     },
   });
 
-  // Update form values when editingTask changes
   React.useEffect(() => {
-    if (editingTask && mode === 'edit') {
+    if (editingTask && mode === "edit") {
       form.reset({
         title: editingTask.title,
         description: editingTask.description || "",
         status: editingTask.status,
       });
-    } else if (mode === 'create') {
+    } else if (mode === "create") {
       form.reset({
         title: "",
         description: "",
@@ -90,7 +91,7 @@ export function CreateTaskForm({
 
   const onSubmit = async (values: TaskFormValues) => {
     try {
-      if (mode === 'edit' && editingTask) {
+      if (mode === "edit" && editingTask) {
         const updatedTask = {
           ...editingTask,
           ...values,
@@ -105,7 +106,10 @@ export function CreateTaskForm({
       }
       form.reset();
     } catch (error) {
-      console.error(`Error ${mode === 'edit' ? 'updating' : 'creating'} task:`, error);
+      console.error(
+        `Error ${mode === "edit" ? "updating" : "creating"} task:`,
+        error
+      );
     }
   };
 
@@ -156,13 +160,16 @@ export function CreateTaskForm({
               <FormLabel className="text-sm font-medium">
                 {t("status")}
               </FormLabel>
-              <Select 
+              <Select
                 onValueChange={(value) => {
-                  const selectedStatus = statuses.find(s => s.name === value);
+                  const selectedStatus = statuses.find((s) => s.name === value);
                   if (selectedStatus) {
-                    field.onChange({ name: selectedStatus.name, color: selectedStatus.color });
+                    field.onChange({
+                      name: selectedStatus.name,
+                      color: selectedStatus.color,
+                    });
                   }
-                }} 
+                }}
                 value={field.value?.name || ""}
               >
                 <FormControl>
@@ -196,16 +203,8 @@ export function CreateTaskForm({
           )}
         />
 
-        <Button
-          type="submit"
-          disabled={isSubmitting}
-          variant="default"
-          className="w-full"
-        >
-          {isSubmitting 
-            ? (mode === 'edit' ? t("updating") : t("creating"))
-            : (mode === 'edit' ? t("updateTask") : t("createTask"))
-          }
+        <Button type="submit" variant="default" className="w-full">
+          {mode === "edit" ? t("updateTask") : t("createTask")}
         </Button>
       </form>
     </Form>

@@ -105,7 +105,13 @@
       "updateTask": "تحديث المهمة",
       "low": "منخفضة",
       "medium": "متوسطة",
-      "high": "عالية"
+      "high": "عالية",
+      "validation": {
+        "titleRequired": "العنوان مطلوب",
+        "titleTooLong": "العنوان طويل جداً",
+        "statusRequired": "الحالة مطلوبة",
+        "colorRequired": "اللون مطلوب"
+      }
     },
     "filters": {
       "search": "بحث...",
@@ -132,7 +138,8 @@
     },
     "pagination": {
       "previous": "السابق",
-      "next": "التالي"
+      "next": "التالي",
+      "of": "من"
     },
     "emptyState": {
       "title": "أوه... إنه فارغ هنا!",

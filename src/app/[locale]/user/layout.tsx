@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAuthContext } from "@/contexts/auth-context";
+import { useAuth } from "@/contexts/app-context";
 import { redirect } from "@/i18n/navigation";
 import { Navbar } from "@/components/navbar";
 import { useLocale } from "next-intl";
@@ -11,7 +11,7 @@ interface UserLayoutProps {
 }
 
 export default function UserLayout({ children }: UserLayoutProps) {
-  const { isAuthenticated, isHydrated } = useAuthContext();
+  const { isAuthenticated, isHydrated } = useAuth();
   const locale = useLocale();
 
   useEffect(() => {

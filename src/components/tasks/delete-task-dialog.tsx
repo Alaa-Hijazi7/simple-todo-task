@@ -40,10 +40,8 @@ export function DeleteTaskDialog({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-left rtl:text-right">
-            {t("title")}
-          </DialogTitle>
-          <DialogDescription className="text-left rtl:text-right">
+          <DialogTitle className="text-start">{t("title")}</DialogTitle>
+          <DialogDescription className="text-start">
             {t("description", { taskTitle: task.title })}
           </DialogDescription>
         </DialogHeader>

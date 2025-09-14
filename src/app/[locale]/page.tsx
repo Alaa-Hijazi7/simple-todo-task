@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAuthContext } from "@/contexts/auth-context";
+import { useAuth } from "@/contexts/app-context";
 import { redirect } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function Home() {
-  const { isAuthenticated, isHydrated } = useAuthContext();
+  const { isAuthenticated, isHydrated } = useAuth();
   const t = useTranslations("common");
   const locale = useLocale();
 

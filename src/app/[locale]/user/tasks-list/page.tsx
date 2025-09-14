@@ -1,30 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
 import { TableHeader } from "@/components/tasks/table-header";
 import { TaskFilters } from "@/components/tasks/task-filters";
 import { TasksTable } from "@/components/tasks/tasks-table";
 import { EmptyState } from "@/components/tasks/empty-state";
 import { Pagination } from "@/components/tasks/pagination";
-import { Task, TaskStatus } from "@/types";
+import { Task } from "@/types";
 import { useTasks } from "@/hooks/useTasks";
 import { useStatuses } from "@/hooks/use-statuses";
 
 export default function TasksListPage() {
-  const t = useTranslations("common.toDoStatus");
-  
-  // Use hooks for data management
-  const { 
-    tasks, 
-    isLoading: tasksLoading, 
-    addTask, 
-    updateTask, 
-    deleteTask, 
-    toggleFavorite, 
-    changeTaskStatus 
+  const {
+    tasks,
+    isLoading: tasksLoading,
+    addTask,
+    updateTask,
+    deleteTask,
+    toggleFavorite,
+    changeTaskStatus,
   } = useTasks();
-  
+
   const { statuses, isLoading: statusesLoading } = useStatuses();
 
   const [filteredTasks, setFilteredTasks] = useState<Task[]>([]);
@@ -132,7 +128,10 @@ export default function TasksListPage() {
         <div className="h-10 w-full bg-gray-200 rounded animate-pulse"></div>
         <div className="space-y-4">
           {[...Array(5)].map((_, i) => (
-            <div key={i} className="h-16 w-full bg-gray-200 rounded animate-pulse"></div>
+            <div
+              key={i}
+              className="h-16 w-full bg-gray-200 rounded animate-pulse"
+            ></div>
           ))}
         </div>
       </div>

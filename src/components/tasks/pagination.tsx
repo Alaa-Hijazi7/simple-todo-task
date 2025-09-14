@@ -50,7 +50,7 @@ export function Pagination({
       </Button>
       
       <div className="text-sm text-muted-foreground">
-        {startItem}-{endItem} of {totalItems}
+        {startItem}-{endItem} {t("of")} {totalItems}
       </div>
       
       <Button

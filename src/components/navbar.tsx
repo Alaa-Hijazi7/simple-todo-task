@@ -1,7 +1,6 @@
 "use client";
 
-import { useAuthContext } from "@/contexts/auth-context";
-import { useTheme } from "@/contexts/theme-context";
+import { useAuth, useTheme } from "@/contexts/app-context";
 import { usePathname, redirect } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -18,7 +17,7 @@ import Image from "next/image";
 
 export function Navbar() {
   const t = useTranslations("common");
-  const { user, isAuthenticated, logout } = useAuthContext();
+  const { user, isAuthenticated, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
   const locale = useLocale();

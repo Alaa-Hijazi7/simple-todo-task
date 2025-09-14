@@ -108,7 +108,13 @@
       "updateTask": "Update Task",
       "low": "Low",
       "medium": "Medium",
-      "high": "High"
+      "high": "High",
+      "validation": {
+        "titleRequired": "Title is required",
+        "titleTooLong": "Title is too long",
+        "statusRequired": "Status is required",
+        "colorRequired": "Color is required"
+      }
     },
     "filters": {
       "search": "Search...",
@@ -135,7 +141,8 @@
     },
     "pagination": {
       "previous": "Previous",
-      "next": "Next"
+      "next": "Next",
+      "of": "of"
     },
     "emptyState": {
       "title": "Uh-oh... It's Empty in Here!",

@@ -45,7 +45,7 @@ export default function AuthLayout({
             dir="ltr"
             className="rubik-wet-paint text-primary text-sm hover:underline cursor-pointer"
           >
-            @ IZTECH VALLY
+            @IZTECH VALLY
           </p>
         </footer>
       </section>
