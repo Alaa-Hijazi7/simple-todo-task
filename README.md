@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Hi Alaa,
 
-## Getting Started
+Thanks for your interest in the Frontend Engineer role and for the great conversation we had. As a next step, we'd like you to complete a take-home assignment. It’s a chance for you to show off your skills.
 
-First, run the development server:
+The goal is to build a simple web application for task management. We're looking for clean, well-structured code that follows modern best practices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Project Requirements:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app should be a complete, frontend-only application. Please make sure it includes the following:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Styling: Use Tailwind CSS and shadcn/ui for all styling and UI parts. The design should be polished and look exactly as the Figma file (make it pixel-perfect).
+Responsiveness: The app must work perfectly on both desktop and mobile devices.
+Theming: Add a light and a dark theme, allowing the user to switch between them.
+Localization: The app should support English (en) and Arabic (ar) using i18next. It also needs to correctly handle Left-to-Right (LTR) and Right-to-Right (RTL) text direction.
+Local Storage: All app data, including user info and tasks, should be stored using localStorage.
+Functionality:
+*User Management: Build a simple Sign Up and Sign In process.
+*Tasks & Statuses: Users should be able to create new tasks and define different statuses for them.
+\*Data Display: Show all created tasks in a well-organized table.
+UI Features: The task table must have pagination to handle a large number of tasks.
+Code Structure: The project should be well structured, and it should also use TypeScript.
+Please ensure the final design is pixel-perfect and follows the Figma file attached later. For any missing elements, such as loading states, please use your best judgment to design a solution that fits the overall style and user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If you find yourself unable to complete every requirement, please prioritize quality over quantity. We would be far more impressed by a smaller, polished, and fully functional part of the application than a rushed attempt to implement all features. In that case, simply add a note to your submission outlining what you chose to focus on and why.
 
-## Learn More
+Deadline: Please submit your solution by Sunday, September 14, 2025
 
-To learn more about Next.js, take a look at the following resources:
+If you have any questions, just let us know.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We’re looking forward to seeing your work.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Figma design: https://www.figma.com/design/7zYMtFm2RSkhBGej2364O7/Task?node-id=0-1&t=nPuP7jsq3JidVKEL-1
 
-## Deploy on Vercel
+Best regards,
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Hala AlGhandour
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Talent Acquisition | IzTech

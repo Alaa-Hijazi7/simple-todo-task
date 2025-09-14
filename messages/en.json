@@ -1,0 +1,145 @@
+{
+  "common": {
+    "createNewTask": "Create New Task",
+    "upload": "Upload",
+    "profile": "Profile",
+    "exit": "Exit",
+    "en": "English",
+    "ar": "العربية",
+    "language": "Language",
+    "theme": "Theme",
+    "userMenu": "User Menu",
+    "signIn": "Sign In",
+
+    "toDoStatus": {
+      "doIt": "Do It",
+      "done": "Done",
+      "inProgress": "In Progress",
+      "createNewStatus": "Create New Status"
+    },
+    "statusDialog": {
+      "title": "Create Status",
+      "statusTitle": "Status title",
+      "selectColor": "Select Color",
+      "create": "Create",
+      "creating": "Creating..."
+    },
+    "search": "Search...",
+    "status": "Status",
+    "allStatuses": "All Statuses",
+    "previous": "Previous",
+    "next": "Next",
+    "edit": "Edit",
+    "delete": "Delete",
+    "changeTo": "Change to",
+    "title": "Title",
+    "description": "Description",
+    "priority": "Priority",
+    "dueDate": "Due Date",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "creating": "Creating...",
+    "createTask": "Create Task"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign In",
+      "description": "Log in to unlock tailored content and stay connected with your community.",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign In",
+      "dontHaveAccount": "Don't have an account?",
+      "signUp": "Sign Up",
+      "validation": {
+        "emailRequired": "Please enter your email address",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Please enter your password",
+        "passwordMinLength": "Password must be at least 8 characters"
+      }
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "description": "Let’s get started. Fill in the details below to create your account.",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "passwordHelper": "Minimum 8 characters.",
+      "signUp": "Sign Up",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "upload": "Upload",
+      "validation": {
+        "nameRequired": "Please enter your name",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordMinLength": "Password must be at least 8 characters"
+      }
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Manage your tasks and track progress",
+    "createNewTask": "Create New Task",
+    "createNewTaskDialog": {
+      "title": "Create New Task",
+      "description": "Add a new task to your list. Fill in the details below."
+    },
+    "editTaskDialog": {
+      "title": "Edit Task",
+      "description": "Update your task details below."
+    },
+    "form": {
+      "title": "Title",
+      "titlePlaceholder": "Enter task title...",
+      "description": "Description",
+      "descriptionPlaceholder": "Type something...",
+      "descriptionHelper": "Optional description for your task",
+      "status": "Status",
+      "statusPlaceholder": "Select a status",
+      "priority": "Priority",
+      "priorityPlaceholder": "Select priority",
+      "dueDate": "Due Date",
+      "dueDateHelper": "Optional due date for the task",
+      "creating": "Creating...",
+      "updating": "Updating...",
+      "createTask": "Create Task",
+      "updateTask": "Update Task",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "filters": {
+      "search": "Search...",
+      "status": "Status",
+      "allStatuses": "All Statuses",
+      "createNewStatus": "Create New Status"
+    },
+    "table": {
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "noDescription": "No description"
+    },
+    "actions": {
+      "changeTo": "Change to",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "deleteDialog": {
+      "title": "Delete Task",
+      "description": "Are you sure you want to delete \"{taskTitle}\"? This action cannot be undone.",
+      "cancel": "Cancel",
+      "delete": "Delete Task"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "emptyState": {
+      "title": "Uh-oh... It's Empty in Here!",
+      "description1": "Looks like all your statuses have vanished into the abyss!",
+      "description2": "Create a new one before the ghosts take over...",
+      "createNewStatus": "Create New Status"
+    }
+  }
+}

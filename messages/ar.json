@@ -1,0 +1,142 @@
+{
+  "common": {
+    "createNewTask": "إنشاء مهمة جديدة",
+    "upload": "رفع",
+    "profile": "الحساب",
+    "exit": "خروج",
+    "en": "English",
+    "ar": "العربية",
+    "language": "اللغة",
+    "theme": "السمة",
+    "userMenu": "قائمة المستخدم",
+    "signIn": "تسجيل الدخول",
+
+    "toDoStatus": {
+      "doIt": "فعله",
+      "done": "تم",
+      "inProgress": "قيد التنفيذ",
+      "createNewStatus": "إنشاء حالة جديدة"
+    },
+    "statusDialog": {
+      "title": "إنشاء حالة",
+      "statusTitle": "عنوان الحالة",
+      "selectColor": "اختر اللون",
+      "create": "إنشاء",
+      "creating": "جاري الإنشاء..."
+    },
+    "search": "بحث...",
+    "status": "الحالة",
+    "allStatuses": "جميع الحالات",
+    "previous": "السابق",
+    "next": "التالي",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "changeTo": "تغيير إلى",
+    "title": "العنوان",
+    "description": "الوصف",
+    "priority": "الأولوية",
+    "dueDate": "تاريخ الاستحقاق",
+    "creating": "جاري الإنشاء...",
+    "createTask": "إنشاء مهمة"
+  },
+  "auth": {
+    "signIn": {
+      "title": "تسجيل الدخول",
+      "description": "تسجيل الدخول للوصول إلى المحتوى المخصص والبقاء متصلًا بمجتمعك.",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "signIn": "تسجيل الدخول",
+      "dontHaveAccount": "ليس لديك حساب؟",
+      "signUp": "تسجيل حساب جديد",
+      "validation": {
+        "emailRequired": "يرجى إدخال عنوان بريدك الإلكتروني",
+        "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "passwordRequired": "يرجى إدخال كلمة المرور",
+        "passwordMinLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل"
+      }
+    },
+    "signUp": {
+      "title": "تسجيل حساب جديد",
+      "description": "دعنا نبدأ. قم بإدخال التفاصيل أدناه لإنشاء حسابك.",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "passwordHelper": "أقل من 8 أحرف.",
+      "signUp": "تسجيل حساب جديد",
+      "alreadyHaveAccount": "لديك حساب؟",
+      "signIn": "تسجيل الدخول",
+      "upload": "رفع",
+      "validation": {
+        "nameRequired": "يرجى إدخال الاسم",
+        "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "passwordMinLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل"
+      }
+    }
+  },
+  "tasks": {
+    "title": "المهام",
+    "subtitle": "إدارة مهامك وتتبع التقدم",
+    "createNewTask": "إنشاء مهمة جديدة",
+    "createNewTaskDialog": {
+      "title": "إنشاء مهمة جديدة",
+      "description": "أضف مهمة جديدة إلى قائمتك. املأ التفاصيل أدناه."
+    },
+    "editTaskDialog": {
+      "title": "تعديل المهمة",
+      "description": "قم بتحديث تفاصيل مهمتك أدناه."
+    },
+    "form": {
+      "title": "العنوان",
+      "titlePlaceholder": "أدخل عنوان المهمة...",
+      "description": "الوصف",
+      "descriptionPlaceholder": "أدخل وصف المهمة...",
+      "descriptionHelper": "وصف اختياري للمهمة",
+      "status": "الحالة",
+      "statusPlaceholder": "اختر حالة",
+      "priority": "الأولوية",
+      "priorityPlaceholder": "اختر الأولوية",
+      "dueDate": "تاريخ الاستحقاق",
+      "dueDateHelper": "تاريخ استحقاق اختياري للمهمة",
+      "creating": "جاري الإنشاء...",
+      "updating": "جاري التحديث...",
+      "createTask": "إنشاء مهمة",
+      "updateTask": "تحديث المهمة",
+      "low": "منخفضة",
+      "medium": "متوسطة",
+      "high": "عالية"
+    },
+    "filters": {
+      "search": "بحث...",
+      "status": "الحالة",
+      "allStatuses": "جميع الحالات",
+      "createNewStatus": "إنشاء حالة جديدة"
+    },
+    "table": {
+      "title": "العنوان",
+      "description": "الوصف",
+      "status": "الحالة",
+      "noDescription": "لا يوجد وصف"
+    },
+    "actions": {
+      "changeTo": "تغيير إلى",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "deleteDialog": {
+      "title": "حذف المهمة",
+      "description": "هل أنت متأكد من أنك تريد حذف \"{taskTitle}\"؟ لا يمكن التراجع عن هذا الإجراء.",
+      "cancel": "إلغاء",
+      "delete": "حذف المهمة"
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "emptyState": {
+      "title": "أوه... إنه فارغ هنا!",
+      "description1": "يبدو أن جميع حالاتك قد اختفت في الهاوية!",
+      "description2": "أنشئ واحدة جديدة قبل أن تستولي الأشباح...",
+      "createNewStatus": "إنشاء حالة جديدة"
+    }
+  }
+}
